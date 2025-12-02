@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "kree",
+    "slug": "kree",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo-kree.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/logo-kree.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "icon": "./assets/logo-kree.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo-kree.png",
+        "backgroundColor": "#ffffff"
+      },
+      "splash": {
+        "image": "./assets/logo-kree.png",
+        "resizeMode": "cover",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.kree"
+    },
+    "web": {
+      "favicon": "./assets/logo-kree.png"
+    },
+    "plugins": [
+      "expo-web-browser"
+    ]
+  }
+}

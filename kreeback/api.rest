@@ -1,0 +1,68 @@
+
+
+POST http://localhost:8080/car
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZmQ2MzFmZjE1MjAwODUyNjRhZjhlMSIsImVtYWlsIjoicG9sYXRheWRlbkBnbWFpbC5jb20iLCJyb2xlIjoiYWdlbmN5IiwiaWF0IjoxNzYxNTgxNDAyfQ.9HKPYDM_tT2gtjL5xFJAp6U1vlZjO-u-2laWG9Ve3RE
+
+{
+  "modelCar": "Audi A4 – Luxury Sedan",
+  "brand": "Audi",
+  "image": "https://wallpapers.com/images/high/audi-luxury-sedan-front-view-m9ye30r5y9k3qidd.png",
+  "km": 170000,
+  "color": "white",
+  "fuelType": "essence",
+  "gearBox": "automatique",
+  "seats": 7,
+  "features": {
+    "gps": true,
+    "bluetooth": false,
+    "climatisation": false
+  },
+ "userId": "690b9284678608ee696f1f96"
+}
+
+### get all cars
+GET http://localhost:8080/car
+
+### delete car
+
+
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZmQ2MzFmZjE1MjAwODUyNjRhZjhlMSIsImVtYWlsIjoicG9sYXRheWRlbkBnbWFpbC5jb20iLCJyb2xlIjoiYWdlbmN5IiwiaWF0IjoxNzYxNTgxNDAyfQ.9HKPYDM_tT2gtjL5xFJAp6U1vlZjO-u-2laWG9Ve3RE
+DELETE http://localhost:8080/car/delete/6900cbbdeb8b0c3864f1bc7e
+
+### Étape 1 : Login pour obtenir le token JWT
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+    "email": "votre_email@exemple.com",
+    "password": "votre_mot_de_passe"
+}
+
+### Étape 2 : Créer une proposition de prix (Name Your Price)
+POST http://localhost:8080/price
+Content-Type: application/json
+Authorization: Bearer votre_token_jwt_ici
+
+{
+    "carId": "id_de_la_voiture",
+    "offeredPrice": 1000,
+    "startDate": "2025-11-10",
+    "endDate": "2025-11-15",
+    "pickupLocation": "Casablanca",
+    "returnLocation": "Casablanca"
+}
+
+### Create Name Your Price proposition
+POST http://localhost:8080/price
+Content-Type: application/json
+Authorization: bearer votre_token_jwt_client
+
+{
+    "carId": "ID_DE_LA_VOITURE",
+    "offeredPrice": 1000,
+    "startDate": "2025-11-10",
+    "endDate": "2025-11-15",
+    "pickupLocation": "Casablanca",
+    "returnLocation": "Casablanca"
+}

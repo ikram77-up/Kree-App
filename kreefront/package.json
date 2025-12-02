@@ -1,0 +1,53 @@
+{
+  "name": "kree",
+  "license": "0BSD",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@react-native-community/datetimepicker": "8.4.4",
+    "@react-native-firebase/app": "^23.5.0",
+    "@react-native-firebase/auth": "^23.5.0",
+    "@react-native-picker/picker": "2.11.1",
+    "@react-navigation/native": "^7.1.19",
+    "@react-navigation/native-stack": "^7.6.2",
+    "@react-navigation/stack": "^7.5.0",
+    "expo": "^54.0.23",
+    "expo-auth-session": "~7.0.8",
+    "expo-av": "~16.0.7",
+    "expo-image-picker": "~17.0.8",
+    "expo-linear-gradient": "~15.0.7",
+    "expo-splash-screen": "~31.0.10",
+    "expo-status-bar": "~3.0.8",
+    "expo-system-ui": "~6.0.8",
+    "expo-web-browser": "^15.0.9",
+    "firebase": "^12.5.0",
+    "i18next": "^25.6.0",
+    "jwt-decode": "^4.0.0",
+    "moti": "^0.30.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-i18next": "^16.2.4",
+    "react-native": "0.81.5",
+    "react-native-localize": "^3.6.0",
+    "react-native-modal-datetime-picker": "^18.0.0",
+    "react-native-reanimated": "~4.1.1",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0",
+    "react-native-toast-message": "^2.3.3",
+    "react-native-web": "^0.21.0",
+    "react-native-web-maps": "^0.3.0",
+    "react-native-worklets": "^0.5.1",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "@react-native-community/cli": "^20.0.2"
+  },
+  "private": true
+}
